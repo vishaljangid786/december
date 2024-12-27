@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="w-full py-4 bg-[#001F3F] sticky top-0 left-0 px-5 sm:px-20 z-50 flex flex-col sm:flex-row sm:items-center items-start justify-between">
+      <div class="w-12 h-12 rounded-full bg-red-500"></div>
+      <i
+        id="menu-icon"
+        class="fa-solid transition cursor-pointer fa-bars text-white text-2xl sm:hidden block absolute right-10 top-6"></i>
+
+      <ul
+        id="list"
+        class="sm:flex-row transition flex-col sm:w-fit hidden sm:flex w-full text-center gap-2 sm:gap-5 text-white inter font-light">
+        <hr
+          class="mt-5 outline-none border-none h-[1px] bg-gray-700 block sm:hidden" />
+        <li
+          class="sm:hover:underline hover:bg-[#FF6F3C] py-2 rounded-lg transition">
+          Home
+        </li>
+        <li
+          class="sm:hover:underline hover:bg-[#FF6F3C] py-2 rounded-lg transition">
+          About Us
+        </li>
+        <li
+          class="sm:hover:underline hover:bg-[#FF6F3C] py-2 rounded-lg transition">
+          Services
+        </li>
+        <li
+          class="sm:hover:underline hover:bg-[#FF6F3C] py-2 rounded-lg transition">
+          Gallery
+        </li>
+        <li
+          class="sm:hover:underline hover:bg-[#FF6F3C] py-2 rounded-lg transition">
+          Contact Us
+        </li>
+      </ul>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero w-full h-[90vh] bg-zinc-800 relative">
+      <img
+        class="w-full h-full object-cover"
+        src="https://s3-alpha-sig.figma.com/img/09dd/051b/74dfe20a3d1359106ac701400037491c?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-t6L19fYWCxUGb4~alfLwMU~Q~HifutCaiZPFkV0lZVnRU5JAvTvCHHSvFzgPAIm8syfrhbcndBjN~zv6OcMvPFJZAaFOA98Huz2o2UeaGvQqd3maggw1BxoCb6n-DPlXM8VWOLXUf2IyY8hikEvEQQOIXCjshNMPb2q~zZS7o2PBhP0H2mqL75NHP~6AnnlFUpDKIDxTCv3zy3fiq4XAdf3Q-CxRDSClOLhMnU-Ki3iv8h50UFuq5rGdmBtAosZRss0ioPa0eIupGrZAbgZQResugrK7eYwJGZM~~KNNTQ9KHFccb8WEdcTOgRD7Qn71WnIyQ~5XYRDIDM7mxQbg__"
+        alt="" />
+
+      <div
+        class="absolute absolute text-white w-full px-5 text-center top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h1 class="text-5xl montserrat font-bold">
+          Smart Talent for Smart Companies
+        </h1>
+        <p class="text-xl px-14 montserrat">
+          Cost effective, Timely delivery, Innovative ideas while you help the
+          <br />
+          next generation <br />
+          Talented Teenagers for your company
+        </p>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="px-5 sm:px-32 py-20 montserrat min-h-screen">
+      <div class="services">
+        <h1 class="text-5xl font-bold text-center mb-5">
+          <span class="text-[#FF6F3C]">Services</span> We Can Help With You !
+        </h1>
+        <p class="text-center text-sm">
+          Sell Tech IND. Productions is an emerging and innovative startup based
+          in Jaipur, Rajasthan, India. Founded with a vision to bring creative
+          <br class="block sm:hidden" />
+          solutions to the forefront, we specialize in a range of digital
+          services including web development, game development, application
+          <br />development, content writing, and digital marketing.
+        </p>
+
+        <div class="flex items-center justify-center gap-3 mt-10">
+          <div class="flex items-center">
+            <hr class="outline-none border-none h-[1px] bg-black w-[37vw]" />
+            <ion-icon name="caret-forward-outline" class="-ml-1"></ion-icon>
+          </div>
+          <button
+            class="text-white bg-[#FF6F3C] text-nowrap p-2 rounded-lg px-4 hover:bg-white border-2 border-transparent hover:font-semibold hover:border-[#FF6F3C] hover:text-[#FF6F3C]">
+            Load More
+          </button>
+          <div class="flex items-center">
+            <ion-icon name="caret-back-outline" class="-mr-1"></ion-icon>
+            <hr class="outline-none border-none h-[1px] bg-black w-[37vw]" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="boxes sm:px-0 items-center flex flex-wrap justify-center gap-5 md:gap-10 sm:gap-5 mt-10">
+        <div
+          class="p-4 rounded-lg border hover:bg-[#FF6F3C] hover:text-white cursor-pointer transition hover:scale-105 border-black w-[350px]">
+          <img
+            src=""
+            class="w-[110px] h-[110px] object-cover bg-gray-400 rounded-full mx-auto mt-5"
+            alt="" />
+          <h1 class="text-center font-semibold text-xl mt-5">
+            Web Development
+          </h1>
+          <p class="text-sm text-center mt-3">
+            We create websites and web applications that are not only visually
+            appealing but also robust and user-friendly.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg border hover:bg-[#FF6F3C] hover:text-white cursor-pointer transition hover:scale-105 border-black w-[350px]">
+          <img
+            src=""
+            class="w-[110px] h-[110px] object-cover bg-gray-400 rounded-full mx-auto mt-5"
+            alt="" />
+          <h1 class="text-center font-semibold text-xl mt-5">
+            Game Development
+          </h1>
+          <p class="text-sm text-center mt-3">
+            Our creative team designs interactive and entertaining games for
+            various platforms, ensuring an engaging user experience.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg border hover:bg-[#FF6F3C] hover:text-white cursor-pointer transition hover:scale-105 border-black w-[350px]">
+          <img
+            src=""
+            class="w-[110px] h-[110px] object-cover bg-gray-400 rounded-full mx-auto mt-5"
+            alt="" />
+          <h1 class="text-center font-semibold text-xl mt-5">
+            Application Development
+          </h1>
+          <p class="text-sm text-center mt-3">
+            We develop mobile and desktop applications tailored to enhance user
+            interaction and meet specific business goals.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg border hover:bg-[#FF6F3C] hover:text-white cursor-pointer transition hover:scale-105 border-black w-[350px]">
+          <img
+            src=""
+            class="w-[110px] h-[110px] object-cover bg-gray-400 rounded-full mx-auto mt-5"
+            alt="" />
+          <h1 class="text-center font-semibold text-xl mt-5">
+            Content Writing
+          </h1>
+          <p class="text-sm text-center mt-3">
+            We craft high-quality, engaging content that resonates with target
+            audiences, helping businesses communicate their message effectively.
+          </p>
+        </div>
+        <div
+          class="p-4 rounded-lg border hover:bg-[#FF6F3C] hover:text-white cursor-pointer transition hover:scale-105 border-black w-[350px]">
+          <img
+            src=""
+            class="w-[110px] h-[110px] object-cover bg-gray-400 rounded-full mx-auto mt-5"
+            alt="" />
+          <h1 class="text-center font-semibold text-xl mt-5">
+            Digital Marketing
+          </h1>
+          <p class="text-sm text-center mt-3">
+            Our digital marketing services are designed to help businesses build
+            a strong online presence, attract customers, and drive growth
+            through strategies
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activities -->
+    <section class="px-32 sm:px-5 py-20 montserrat min-h-screen">
+      <div class="activities">
+        <h1 class="text-[4vw] font-bold text-center">
+          <span class="text-[#FF6F3C]">Activities</span> We Completed
+        </h1>
+        <p class="text-center roboto text-xl">
+          At Sell Tech IND. Productions, we take pride in delivering successful
+          projects across various domains. Here are some of our key milestones:
+        </p>
+
+        <h1 class="text-xl">place for images</h1>
+
+        <div class="flex justify-end px-20 mt-10">
+          <button
+            class="text-white bg-[#FF6F3C] px-4 p-2 hover:bg-white hover:text-[#FF6F3C] hover:font-semibold hover:border-2 hover:border-[#FF6F3C] rounded-lg text-sm flex gap-2 items-center">
+            LOAD MORE
+            <ion-icon
+              name="arrow-forward-circle-outline"
+              class="text-2xl"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review's -->
+    <section class="px-20">
+        <h1 class="text-[3vw] montserrat font-bold"><span class="text-[#FF6F3C]">Review's</span> Of Clients</h1>
+        <p class="roboto text-xl">At Sell Tech IND. Productions, client satisfaction is our top priority. Hear from businesses and individuals who have experienced the impact of our IT solutions.</p>
+
+         <div class="flex flex-wrap justify-around mt-10 gap-5">
+            <div class="bg-white rounded-xl w-[400px] border p-4 hover:scale-105 transition hover:bg-[#FF6F3C] hover:text-white ">
+                <img src="" class="w-40 h-40 rounded-full bg-gray-400  mx-auto" alt="">
+                <div class="w-full flex flex-col items-center mt-10">
+                    <h1 class="text-3xl font-bold roboto">Meetu</h1>
+                    <p class="roboto text-xl">Clients</p>
+                    <div class="stars flex mt-2">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (2).png" alt="">
+                    </div>
+                    <p class="roboto p-3 ">Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl w-[400px] border p-4 hover:scale-105 transition hover:bg-[#FF6F3C] hover:text-white ">
+                <img src="" class="w-40 h-40 rounded-full bg-gray-400  mx-auto" alt="">
+                <div class="w-full flex flex-col items-center mt-10">
+                    <h1 class="text-3xl font-bold roboto">Meetu</h1>
+                    <p class="roboto text-xl">Clients</p>
+                    <div class="stars flex mt-2">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (2).png" alt="">
+                        
+                    </div>
+                    <p class="roboto p-3 ">Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.</p>
+                </div>
+                
+            </div>
+            <div class="bg-white rounded-xl w-[400px] border p-4 hover:scale-105 transition hover:bg-[#FF6F3C] hover:text-white ">
+                <img src="" class="w-40 h-40 rounded-full bg-gray-400  mx-auto" alt="">
+                <div class="w-full flex flex-col items-center mt-10">
+                    <h1 class="text-3xl font-bold roboto">Meetu</h1>
+                    <p class="roboto text-xl">Clients</p>
+                    <div class="stars flex mt-2">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (1).png" alt="">
+                        <img src="/Vector (2).png" alt="">
+                        
+                    </div>
+                    <p class="roboto p-3 ">Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.Vero id posuere tempus aspernatur quaerat mollis voluptatum eveniet porro viverra libero habitasse porro.</p>
+                </div>
+            
+            </div>
+        </div>
+        <button class="text-white mt-10 ml-10 bg-[#FF6F3C] border-2 border-transparent transition montserrat outline-none px-4 p-2 hover:bg-white hover:text-[#FF6F3C] hover:font-semibold hover:border-2 hover:border-[#FF6F3C] rounded-lg text-sm flex gap-2 items-center">LOAD MORE <ion-icon name="arrow-forward-circle-outline"  class="text-2xl"></ion-icon></button>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-5 sm:32 mt-10 min-h-screen">
+        <h1 class="text-center text-5xl montserrat font-bold mb-3">
+            <span class="text-[#FF6F3C]">Frequently</span>
+            asked questions
+        </h1>
+        <p class="text-center roboto text-xl text-gray-600">Everything you need to know about the product and billling.</p>
+    
+        <div class="faq-container max-w-6xl mx-auto space-y-4 mt-10 inter">
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">What services do you provide?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                We provide web development, game development, application development,
+                content writing, and digital marketing services.
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">How can I contact you?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                You can contact us through our website's contact form or email us at
+                info@selltechind.com.
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">Do you provide custom solutions?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                Yes, we specialize in custom solutions tailored to your business
+                needs, ensuring innovative and effective outcomes.
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">Do you provide custom solutions?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                Yes, we specialize in custom solutions tailored to your business
+                needs, ensuring innovative and effective outcomes.
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">Do you provide custom solutions?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                Yes, we specialize in custom solutions tailored to your business
+                needs, ensuring innovative and effective outcomes.
+              </p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="faq-item rounded-lg p-4 ">
+            <div
+              class="faq-question flex justify-between items-center cursor-pointer"
+              onclick="toggleFAQ(this)">
+              <h2 class="text-lg font-semibold">Do you provide custom solutions?</h2>
+              <ion-icon
+                name="add-circle-outline"
+                class="text-2xl transition-transform duration-300"></ion-icon>
+            </div>
+            <div class="faq-answer hidden mt-3">
+              <p class="text-gray-600">
+                Yes, we specialize in custom solutions tailored to your business
+                needs, ensuring innovative and effective outcomes.
+              </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+    </section>
+
+    <!-- still Quuestions -->
+    <section class=" h-60 flex flex-col items-center justify-center gap-2">
+      <div class="w-fit flex relative">
+        <img class="w-14 rounded-full bg-[#ABB677] z-20 absolute -left-10 top-0" src="https://s3-alpha-sig.figma.com/img/74c6/0f24/857ed03c48e8a06aff8d4bced17c0656?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ar1I~crrUth6nEaKm1eX1J00OwdmeroxCg1n5S6qr~sZKe8cKncb7WkZ0unmnUMjFTP8wfuBQCMu6G1vcNhkVjYehRId4Xpcpz0KCVnlg2X0bRrP7iqnbjC8~CDz-SAgKLPq3dK9hc33srSFA3wRKQG9aFztmTF0E64pmqD27cdO~nb~1YbdMWks4sHxRELOOVhLIOx3x7BFmgER8mR1Mcu6nSbL5rrE-mxRaOFws2Xsb-wUFsSIU9X~5PZ1WgrOfcQ9Ne9tLPX8gLMtriqq44azmiFVtlQziBm1yrmP6Wcpfrh0Em4CHQGK91gJdJr8bMuH4jqJdWpGnXSOrxvN~A__" alt="">
+        <img class="w-14 rounded-full bg-[#C7B9DA] z-30 -mt-1 scale-110" src="https://s3-alpha-sig.figma.com/img/2f11/9087/0d753151f58657595136f67c584b5c8c?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IV50iQghjmL-ldJ12YlmmYECwAw4m5Qg-AKKJhV5-B-eWa61VMKMNf8X899isbEVHWCgxsBOk9tQNZ76sLSfwBt~djZFIy6aWULyYxTNb6y6qJr4-HEYg-orKtm09aDMdY1zLLqaKbCbbgVvs-CDMbOobq1-mDOYn02SW-9lVPG3-rAbT9xX3AAioJqvWJ~779KbCdq2VFlK0GrSXhyRuRumOJVz-Db~k8sQ0JgA4Cb3XA2LRJH0xBwRUsGqWdfviqAxTGz1nXWqIH1dQOsPF~0v9AMBlGQiCzRngXiRAhzbe55OL6wB~8NX~3yWf4re7gdYa4fuiwk-pOgqHvdnhQ__" alt="">
+        <img class="w-14 rounded-full bg-[#D9B9BB] z-20 absolute -right-10 top-0" src="https://s3-alpha-sig.figma.com/img/f8b5/1203/5a2e42c8ec0c92cd29eb940180f4d6b5?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XOarfbCo8ONLvu-c299~bLAXUTb659h1hzZAVTw5yTybiojFecQXxg0CxOWPhvpcPJ7WTRjYvtTyz0yU4JSXmHE6eWIzz0YaSkPyGQ4aFPYMdG36lOh28xwEaejjIPajF6LwUcVUP7kRCPKTIwBf-yYT7WsETSdHM~OHG50bb8A2dWGwCzV9haBLZGyfybqnwAsC9NBu9Uxo67L7p3wB-f4NRbdzXG-qD5WjJwFk~0RZj6LXYKBKF-jxZjMgNGMZcAaYp39J-XJLyLSoyMXgb4UMfquB0sdjOsJz5sz9AbWxHRdacyUccg-C6IfYDFTJEcIlzkpA5UffGtY8CD8SzQ__" alt="">
+      </div>
+      <h1 class="montserrat text-2xl font-semibold mt-4">Still have questions ?</h1>
+      <p class="text-xl inter text-gray-600 text-center px-5">Can't find the answer you're looking for? Please chat to our friendly team.</p>
+      <button class="text-white bg-[#001F3F] rounded-lg py-2 px-4 inter mt-5">Get in touch</button>
+    </section>
+
+    <!-- contact and join -->
+    <section class="flex flex-col py-3 gap-4 bg-[#001F3F] sm:px-20 px-5 text-white">
+      <h1 class="text-5xl montserrat font-bold  text-center"><span class="text-[#FF6F3C]">Contact</span> & Join Together</h1>
+      <p class="text-center font-light roboto">We're here to help you with all your IT needs. Whether you have a question, need support, or want to discuss a project, our team is ready to assist you.</p>
+      <div class="flex md:flex-row flex-wrap items-center gap-10 justify-center md:justify-between mt-3 lg:px-48 px-30">
+        <div class="text-center">
+          <img class="w-28 h-28 mb-5 bg-gray-400 rounded-full mx-auto" src="" alt="">
+          <h1 class="poppins">Phone Number:</h1>
+          <p class="font-extralight text-sm poppins"> +91 8107734889</p>
+        </div>
+        <div class="text-center">
+          <img class="w-28 h-28 mb-5 bg-gray-400 rounded-full mx-auto" src="" alt="">
+          <h1 class="poppins">Mail Address:</h1>
+          <p class="font-extralight text-sm poppins">Selltech25@gmail.com</p>
+        </div>
+        <div class="text-center">
+          <img class="w-28 h-28 mb-5 bg-gray-400 rounded-full mx-auto" src="" alt="">
+          <h1 class="poppins">Office Address:</h1>
+          <p class="font-extralight text-sm poppins">169A , Ram Gali </p>
+        </div>
+      </div>
+      <div class="flex gap-6 mx-auto text-xl mt-4">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+    </section>
+
+    <!-- get in touch -->
+    <section class=" max-w-3xl lg:px-0 px-5 sm:px-10 mx-auto ">
+      <div class="mx-auto text-center p-4">
+        <h1 class="text-5xl font-bold montserrat"><span class="text-[#FF6F3C]">Get</span> In Touch !</h1>
+        <p class="roboto text-gray-600">Want to Ask Something. Ask Freely </p>
+      </div>
+      <form action="" class="flex flex-col gap-3 items-center py-10">
+        <input class="rounded-full p-2 px-4 w-full outline-none border text-black placeholder:text-gray-600" type="text" name="Name" placeholder="Fullname" id="">
+        <input class="rounded-full p-2 px-4 w-full outline-none border text-black placeholder:text-gray-600" type="number" name="Number" placeholder="Phone Number" id="">
+        <input class="rounded-full p-2 px-4 w-full outline-none border text-black placeholder:text-gray-600" type="email" name="Email" placeholder="What's Your email?" id="">
+        <textarea name="message" class=" resize-none  outline-none w-full rounded-3xl p-2 px-4 placeholder:text-gray-600 border" placeholder="Your questions....." rows="3" id=""></textarea>
+        <button  class="w-full bg-[#001F3F] text-white rounded-full montserrat hover:bg-white hover:border-[#001F3F] hover:text-[#001F3F] hover:font-bold transition active:bg-[#001F3F] active:text-white active:font-semibold border-2 border-transparent py-2" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <section
+      class="flex flex-col py-3 gap-4 bg-[#001F3F] px-6 sm:px-10 md:px-16 lg:px-20 text-white">
+      <div
+        class="mt-10 px-4 md:px-10 lg:px-20 flex flex-col lg:flex-row justify-between gap-10">
+        <img
+          class="w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 bg-gray-400 rounded-full mx-auto lg:mx-0"
+          src=""
+          alt="" />
+        <div class="montserrat flex flex-col gap-5 text-center lg:text-left">
+          <h1 class="text-lg font-semibold sm:text-xl mb-2 lg:mb-3">About Us</h1>
+          <a class="text-sm hover:underline" href="">Our Story</a>
+          <a class="text-sm hover:underline" href="">Rewards</a>
+        </div>
+        <div class="montserrat flex flex-col gap-5 text-center lg:text-left">
+          <h1 class="text-lg font-semibold sm:text-xl mb-2 lg:mb-3">Customer Service</h1>
+          <a class="text-sm hover:underline" href="">Contact Us</a>
+          <a class="text-sm hover:underline" href="">Track Your Order</a>
+          <a class="text-sm hover:underline" href="">Terms & Conditions</a>
+          <a class="text-sm hover:underline" href="">Privacy Policy</a>
+        </div>
+        <div class="montserrat flex flex-col gap-5 text-center lg:text-left">
+          <h1 class="text-lg font-semibold sm:text-xl">Let's Keep in Touch!</h1>
+          <form
+            action=""
+            class="flex flex-col gap-4 w-full lg:w-[250px] mx-auto lg:mx-0">
+            <input
+              class="rounded-lg border outline-none p-2 px-3 text-sm sm:text-base"
+              type="text"
+              placeholder="abc@gmail.com"
+              name=""
+              id="" />
+            <textarea
+              class="rounded-lg border outline-none resize-none p-2 px-3 text-sm sm:text-base"
+              name="message"
+              placeholder="Message"
+              id="">
+            </textarea>
+            <button
+              type="submit"
+              class="bg-[#FF6F3C] py-2 text-sm sm:text-base rounded-lg hover:bg-transparent border-2 border-transparent hover:border-[#FF6F3C] active:bg-[#FF6F3C]">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <hr class="mt-10 border-gray-600" />
+      <div class="flex justify-center gap-6 text-lg sm:text-xl my-2">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-github"></ion-icon>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
